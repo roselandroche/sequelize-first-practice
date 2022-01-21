@@ -11,7 +11,8 @@ services:
       POSTGRES_DB: rest
     ports:
       - 5432:5432
-    volumes: restpsql:/var/lib/postgresql/data
+    volumes:
+      - restpsql:/var/lib/postgresql/data
 
   adminer:
     image: adminer
